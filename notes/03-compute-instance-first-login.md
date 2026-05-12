@@ -110,7 +110,7 @@ Why:
 
 ```text
 Ubuntu 24.04 is a modern Linux server OS.
-It is good for learning Linux, Docker, Python, Nginx, Git, and data engineering tools.
+It is well suited for Linux, Docker, Python, Nginx, Git, and data engineering tools.
 ```
 
 For this lab, the default SSH user is:
@@ -136,14 +136,14 @@ OCPU: 1
 RAM: 4–6 GB
 ```
 
-Good first setup:
+Recommended starting profile:
 
 ```text
 OCPU: 1
 RAM: 6 GB
 ```
 
-If capacity is limited, try:
+If capacity is constrained, try:
 
 ```text
 OCPU: 1
@@ -264,11 +264,11 @@ Why:
 
 ```text
 The boot volume stores Ubuntu, packages, Docker, Python tools, logs, and project files.
-Default storage is enough for the first lab.
+Default storage is enough for the initial deployment.
 Extra block volumes can be added later for databases or datasets.
 ```
 
-For the first lab, avoid adding extra block volumes unless needed.
+For the initial deployment, avoid adding extra block volumes unless needed.
 
 ---
 
@@ -580,7 +580,7 @@ Then connect with:
 ssh oci-ubuntu-lab
 ```
 
-This is cleaner than typing the full SSH command every time.
+This is more efficient than typing the full SSH command every time.
 
 ---
 
@@ -640,7 +640,7 @@ ssh oci-ubuntu-lab
 
 ---
 
-# 20. Basic Server Health Checks
+# 20. Baseline Server Health Checks
 
 After reconnecting, run:
 
@@ -693,7 +693,7 @@ For HTTPS later, allow:
 TCP 443
 ```
 
-Do not open these until needed.
+Open these only when the service is intentionally exposed.
 
 ---
 
@@ -738,7 +738,7 @@ SSH key name
 Date created
 ```
 
-Avoid putting these in a public repo unless intentionally public:
+Avoid placing these in a public repository unless intentionally disclosed:
 
 ```text
 Real public IP
@@ -753,7 +753,7 @@ API keys
 
 # 24. Final Target Setup
 
-The desired VM setup is:
+Target VM profile:
 
 ```text
 Cloud: Oracle Cloud Infrastructure
@@ -771,9 +771,9 @@ Purpose: Linux, Docker, PostgreSQL, Python, Nginx, data engineering lab
 
 ---
 
-# 25. What This Build Teaches
+# 25. What This Build Demonstrates
 
-This project teaches:
+This project demonstrates:
 
 ```text
 Cloud VM creation
@@ -786,7 +786,7 @@ Cloud-init automation
 Package management
 Systemd services
 Docker installation
-Nginx basics
+Nginx baselines
 PostgreSQL client tools
 Infrastructure documentation
 Git-based infrastructure notes

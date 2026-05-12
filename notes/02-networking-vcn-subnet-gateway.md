@@ -38,7 +38,7 @@ notes/04-troubleshooting.md
 
 # 1. Network Architecture
 
-For a simple Ubuntu server lab, use this structure:
+For a standard Ubuntu server environment, use this structure:
 
 | Resource | Example Name |
 |---|---|
@@ -364,7 +364,7 @@ Security Lists apply to the subnet.
 
 Network Security Groups apply to specific VNICs or resources.
 
-For a simple lab, either can work.
+For a standard deployment, either can work.
 
 The important thing is that TCP port `22` must be allowed for SSH.
 
@@ -398,7 +398,7 @@ Important:
 0.0.0.0/0 for SSH means anyone on the internet can try to connect to port 22.
 ```
 
-This may be acceptable temporarily while setting up the server.
+This can be used temporarily during controlled setup, then restricted.
 
 After setup, restrict SSH to:
 
@@ -695,9 +695,9 @@ To make an OCI Ubuntu instance reachable from a Mac through SSH, the network mus
 6. Instance public IPv4 address
 ```
 
-The biggest lesson:
+Key operational point:
 
 ```text
-A public IP address alone does not guarantee internet reachability.
+A public IP address alone does not establish internet reachability.
 The route table must explicitly send internet traffic to the Internet Gateway.
 ```

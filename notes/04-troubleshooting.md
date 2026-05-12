@@ -577,7 +577,7 @@ Use a bastion host
 Use a private network/VPN setup
 ```
 
-For this beginner lab, the easiest path is:
+For this standard public-server setup, the easiest path is:
 
 ```text
 Public subnet + automatically assigned public IPv4

@@ -46,10 +46,10 @@ oci-ubuntu-server-lab
 Purpose:
 
 ```text
-Build a headless Ubuntu server on Oracle Cloud Infrastructure for learning Linux, SSH, Docker, PostgreSQL, Python, Git, Nginx, and data engineering infrastructure.
+Build a headless Ubuntu server on Oracle Cloud Infrastructure for building and operating Linux, SSH, Docker, PostgreSQL, Python, Git, Nginx, and data engineering infrastructure.
 ```
 
-This project is for learning:
+This project is to demonstrate:
 
 ```text
 Cloud VM creation
@@ -60,7 +60,7 @@ VCNs and subnets
 Security rules and ports
 Cloud-init automation
 Docker installation
-Nginx basics
+Nginx baselines
 PostgreSQL client tools
 Git-based infrastructure documentation
 ```
@@ -99,7 +99,7 @@ oci-ubuntu-server-lab
 Description:
 
 ```text
-Headless Ubuntu server lab on Oracle Cloud Infrastructure for learning Linux, SSH, Docker, PostgreSQL, Python, Git, Nginx, and data engineering infrastructure.
+Headless Ubuntu server lab on Oracle Cloud Infrastructure for building and operating Linux, SSH, Docker, PostgreSQL, Python, Git, Nginx, and data engineering infrastructure.
 ```
 
 Recommended visibility:
@@ -382,9 +382,9 @@ Docker
 Docker Compose plugin
 ```
 
-Cloud-init is useful because it makes the server setup repeatable.
+Cloud-init makes server provisioning repeatable.
 
-Instead of manually installing the same tools every time, the server can install them during first boot.
+This supports repeatable provisioning by installing required tooling during first boot.
 
 ---
 
@@ -406,7 +406,7 @@ Using tabs instead of spaces
 Broken repository command
 ```
 
-Basic local check:
+Baseline local check:
 
 ```bash
 head -n 5 cloud-init/cloud-init.yaml
@@ -480,7 +480,7 @@ The local setup is ready when these are complete:
 6. Cloud-init file created
 ```
 
-The key rule:
+Key rule:
 
 ```text
 Public key goes into Oracle Cloud.
