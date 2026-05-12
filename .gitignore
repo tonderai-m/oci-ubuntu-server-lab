@@ -216,3 +216,46 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# =========================================================
+# Cloud / SSH / Infrastructure secrets
+# =========================================================
+
+# SSH private keys and key files
+*.pem
+*.key
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+*.pub
+
+# Environment secrets
+.env
+.env.*
+.envrc
+
+# Oracle Cloud credentials
+.oci/
+oci_config
+oracle_config*
+oci_api_key*
+*.oci
+
+# Terraform secret variables
+*.tfvars
+*.tfvars.json
+
+# Local config files that may contain secrets
+config
+credentials
+secrets/
+*.secret
+*.secrets
+
+# Mac system files
+.DS_Store
+
+# VS Code local settings
+.vscode/
